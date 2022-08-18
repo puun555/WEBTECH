@@ -1,0 +1,27 @@
+.aug,.oct {
+    color: red;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 32px;
+}
+
+th, tr {
+    width: 65px;
+    height: 60px;
+}
+
+th {
+    background-color: hsl(0, 50%, 60%);
+    color: aliceblue;
+}
+table {
+    margin: auto;
+}
+
+body {
+    display: flex;
+}
