@@ -13,42 +13,50 @@
 <body>
     <form class="container" style="padding:30px 0;">
         <div class="form-group">
-          <h3>หมายเลขบัตรประชาชน</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">หมายเลขบัตรประชาชน</lable>
           <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="กรอก หมายเลขบัตรประชาชน">
           <small id="emailHelp" class="form-text text-muted">เป็นตัวเลข จำนวน 13 หลัก</small>
         </div>
-        <div class="form-group">
-          <h3>คำนำหน้านาม</h3>
-          <input type="password" class="form-control" placeholder="คำนำหน้านาม">
-          <small id="emailHelp" class="form-text text-muted">นาย นาง นางสาว เด็กชาย เด็กหญิง</small>
+        <div class="form-row">
+          <div class="col">
+            <lable for="" class="col-sm-2 col-form-label-lg">คำนำหน้านาม</lable>
+            <select class="form-control" name="pronoun">
+              <option value="" selected>----คำนำหน้า----</option>
+              <option value="นาย">นาย</option>
+              <option value="นางสาว">นางสาว</option>
+              <option value="นาง">นาง</option>
+              <option value="เด็กชาย">เด็กชาย</option>
+              <option value="เด็กหญิง">เด็กหญิง</option>
+            </select>
+          </div>
+          <div class="col">
+            <lable for="" class="col-sm-2 col-form-label-lg">ชื่อ</lable>
+            <input type="password" class="form-control" placeholder="ชื่อ">
+            <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวระหว่าง 2-20 ตัวอักษร</small>
+          </div>
+          <div class="col">
+            <lable for="" class="col-sm-2 col-form-label-lg">นามสกุล</lable>
+            <input type="password" class="form-control" placeholder="นามสกุล">
+            <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวระหว่าง 2-30 ตัวอักษร</small>
+          </div>
         </div>
         <div class="form-group">
-          <h3>ชื่อ</h3>
-          <input type="password" class="form-control" placeholder="ชื่อ">
-          <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวระหว่าง 2-20 ตัวอักษร</small>
-        </div>
-        <div class="form-group">
-          <h3>นามสกุล</h3>
-          <input type="password" class="form-control" placeholder="นามสกุล">
-          <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวระหว่าง 2-30 ตัวอักษร</small>
-        </div>
-        <div class="form-group">
-          <h3>ที่อยู่</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">ที่อยู่</lable>
           <input type="password" class="form-control" placeholder="ที่อยู่">
           <small id="emailHelp" class="form-text text-muted">ความยาวไม่ต่ำกว่า 5 ตัวอักษร</small>
         </div>
         <div class="form-group">
-          <h3>ตำบล/แขวง</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">ตำบล/แขวง</lable>
           <input type="password" class="form-control" placeholder="ตำบล/แขวง">
           <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวไม่ต่ำกว่า 2 ตัวอักษร</small>
         </div>
         <div class="form-group">
-          <h3>อำเภอ/เขต</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">อำเภอ/เขต</lable>
           <input type="password" class="form-control" placeholder="อำเภอ/เขต">
           <small id="emailHelp" class="form-text text-muted">เป็นตัวอักษร ความยาวไม่ต่ำกว่า 2 ตัวอักษร</small>
         </div>
         <div class="form-group">
-          <h3>จังหวัด</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">จังหวัด</lable>
           <select class="form-control" name="province">
             <option value="" selected>--------- เลือกจังหวัด ---------</option>
             <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
@@ -131,7 +139,7 @@
         </select>
         </div>
         <div class="form-group">
-          <h3>รหัสไปรษณีย์</h3>
+          <lable for="" class="col-sm-2 col-form-label-lg">รหัสไปรษณีย์</lable>
           <input type="password" class="form-control" placeholder="รหัสไปรษณีย์">
           <small id="emailHelp" class="form-text text-muted">เป็นตัวเลข จำนวน 5 หลัก</small>
         </div>
