@@ -5,6 +5,11 @@ function Check() {
         alert("หมายเลขบัตรประชาชนของคุณไม่ถูกต้อง")
         return false
     }
+    let prefig = document.getElementById('prefig').value;
+    if (prefig == "") {
+        alert("โปรดใส่คำนำหน้า")
+        return false
+    }
 
     let fname = document.getElementById('firstName').value;
     let lname = document.getElementById('lastName').value;
@@ -31,6 +36,11 @@ function Check() {
     if (region.length < 2) {
         alert("Region Inccorect")
         return false
+    }
+    let city = document.getElementById('city').value;
+    if (city == "") {
+        alert('โปรดเลือกจังหวัด')
+        return false;
     }
 
     let postnum = document.getElementById('postPass').value;

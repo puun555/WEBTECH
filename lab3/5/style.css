@@ -1,0 +1,53 @@
+.con {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: grey;
+}
+#one {
+    background-color: white;
+}
+#card {
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 80%;
+}
+body {
+    display: flex;
+    height: 100%;
+    font-family: 'Prompt', sans-serif;
+}
+
+html{
+    margin: 0;
+    height: 100%;
+    /* width: 100%; */
+
+}
+
+
+#container {
+    background-color: aliceblue;
+    width: 60%;
+    height: 60%;
+    border-radius: 1em;
+    margin: auto;
+    box-shadow: 1px 5px 10px gray;
+}
+
+#container * {
+    padding: 7px;
+}
+
+#container button{
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+}
+
+#container h2 {
+    padding-top: 30px;
+    padding-left: 10px;
+
+}

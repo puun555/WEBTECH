@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>3</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="box" id="box0"></div>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+        </div>
+        <button type="button" onClick="rotate()">Rotate</button>
+    </div>
+</body>
+<script type="text/javascript">
+    let box = document.getElementsByClassName("box")
+    let arrbg = ['http://10.0.15.20/312lab3/images/1.png', 'http://10.0.15.20/312lab3/images/2.png', 'http://10.0.15.20/312lab3/images/3.png', 'http://10.0.15.20/312lab3/images/4.png']
+    let arrstr = ['1', '2', '3', '4']
+    let j = 0;
+    function rotate() {
+        arrstr[1] = arrbg[0]
+        arrstr[2] = arrbg[3]
+        arrstr[3] = arrbg[1]
+        arrstr[0] = arrbg[2]
+        Array.prototype.forEach.call(box, function (element, index) {
+            box[index].style.backgroundImage = "url(" + arrstr[j] + ")"
+            j++
+            if (j > 3) { j = 0 }
+        });
+        arrbg[0] = arrstr[0]
+        arrbg[1] = arrstr[1]
+        arrbg[2] = arrstr[2]
+        arrbg[3] = arrstr[3]
+    }
+</script>
+
+</html>
