@@ -14,7 +14,6 @@
     border-radius: 0%;
     padding: 0;
     opacity: 0.8;
-    
 }
 
 .card1 img {
@@ -24,13 +23,17 @@
     border-radius: 0%;
     /* filter: blur(1px); */
 }
+
 body,html {
     font-family: gstatic;
     background-color: #202020;
 }
 
 .box1 {
-    padding:200px 100px 0px 100px;
+    width: fit-content;
+    padding-top: 70px;
+    padding-left: 100px;
+    -webkit-text-stroke: 0.3px #505050;
 }
 
 .card-img {
@@ -39,4 +42,21 @@ body,html {
 
 #imgcard4 {
     object-position: 100% 60%;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+
+.contact {
+    position: absolute;
+    display: flex;
+    width: 20%;
+    height: 20%;
+    z-index: 1000;
+}
+
+.contact a {
+    padding: 10px;
 }
