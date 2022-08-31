@@ -93,9 +93,48 @@ body,html {
     transition: all 0.8s;
 }
 
-#base {
-    width: 80px;
+.skillcontainer {
+    width: fit-content;
     height: 80px;
+    display: flex;
+    margin: 20px;
+}
+
+#frames img {
+    height: 65px;
+    margin-top: 10px;
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.logic {
+    margin-top: 20px;
+}
+
+#prog img {
+    height: 70px;
+    padding-right: 20px;
+}
+
+.container {
+    background-color: #202020;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.personalcard {
+    width: 50%;
+    height: 70%;
+}
+
+.page-con {
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 
+.section {
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+}
