@@ -35,6 +35,7 @@ body,html {
     padding-top: 70px;
     padding-left: 100px;
     z-index: 100000;
+    position: absolute;
     -webkit-text-stroke: 0.3px #505050;
 }
 
@@ -59,13 +60,14 @@ body,html {
 }
 
 .contact a {
+    width: 90px;
     padding-left: 10px;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .contact a :hover{
     scale: 1.1;
-    transition: all 0.7s;
+    transition: all 1s;
 }
 
 #info {
@@ -89,5 +91,11 @@ body,html {
 #moreinfo:hover {
     font-size: 34px;
     transition: all 0.8s;
+}
+
+#base {
+    width: 80px;
+    height: 80px;
+    display: flex;
 }
 
