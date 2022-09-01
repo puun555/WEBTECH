@@ -1,0 +1,20 @@
+input{
+    max-width: 40px;
+}
+
+#table{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.box{
+    border:2px solid black;
+    padding: 7vh;
+    width: 0.5%;
+}
+
+.yess{
+    display: flex;
+    justify-content: center;
+}
