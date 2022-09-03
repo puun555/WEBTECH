@@ -1,10 +1,10 @@
 #navbar1 {
     background-color: #363636;
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     opacity: 0.8;
+    width: 100%;
 }
 
 .card1{
@@ -129,8 +129,10 @@ body,html {
     position: absolute;
     width: 50%;
     border-radius: 0px;
-    height: 90%;
+    height: fit-content;
+    max-height: 90%;
     margin-left: 50%;
+    margin-top: 50px;
 
 }
 
@@ -152,8 +154,8 @@ body,html {
 
 
 @keyframes move {
-    0% {transform: translateX(60px); opacity: 0;}
-    100% {transform: translateX(0px); opacity: 1;}
+    0% {transform: translateX(60px); opacity: 0; scale: 1.1;}
+    100% {transform: translateX(0px); opacity: 1; scale: 1;}
 }
 .row img{
     width: 100%;
@@ -161,9 +163,42 @@ body,html {
 
 .row {
     margin-top: 20px;
-    animation: move 0.3s linear alternate;
 }
 #pic {
     opacity: 1;
     background-color: #303030
+}
+
+#pic1 {
+    animation: move 0.1s linear alternate;
+}
+#pic2 {
+    animation: move 0.15s linear alternate;
+}
+#pic3 {
+    animation: move 0.2s linear alternate;
+}
+#pic4 {
+    animation: move 0.25s linear alternate;
+}
+#pic5 {
+    animation: move 0.3s linear alternate;
+}
+#pic6 {
+    animation: move 0.2s linear alternate;
+}
+#pic7 {
+    animation: move 0.25s linear alternate;
+}
+#pic8 {
+    animation: move 0.3s linear alternate;
+}
+
+.head{
+    animation: move 0.4s linear alternate;
+}
+
+.caption{
+    animation: move 0.45s linear alternate;
+
 }
