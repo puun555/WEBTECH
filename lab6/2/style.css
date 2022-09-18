@@ -1,0 +1,25 @@
+.cat{
+    margin:1%;
+    width: 40%;
+    border: 10px solid black;
+    border-radius: 10px;
+    text-align: center;
+    float: left;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+.cat p{
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+
+    .cat {
+        width: 80%;
+    }
+}
+
