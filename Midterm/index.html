@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+        crossorigin="anonymous"
+        />
+        <title>webtech</title>
+        <script src="script.js"></script>
+        <link href="style.css">
+    </head>
+    <body>
+        <form>
+            <div class="form-group">
+                <label class="col-form-label">คำถาม: </label>
+                <input type="text" class="col-sm-5" id="question" style="width: 80%;" />
+            </div>
+            <div class="form-check">
+                <input type="radio" class="choice" id="correction_a" name="questionpoint" value="a"/>
+                <label class="col-form-label">A</label>
+                <input type="text" id="ans_a" style="width: 70%;"/>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="choice" id="correction_b" name="questionpoint" value="b"/>
+                <label class="col-form-label">B</label>
+                <input type="text" id="ans_b" style="width: 70%;"/>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="choice" id="correction_c" name="questionpoint" value="c"/>
+                <label class="col-form-label">C</label>
+                <input type="text" id="ans_c" style="width: 70%;"/>
+            </div>
+            <button type="button" class="btn-group btn-primary m-2" style="border-radius: 0px;" onclick="insert()">เพิ่มคำตอบ</button>
+        </form>
+
+        <table class="table table-striped mt-3" id="tables">
+            <thead>
+                <tr>
+                    <th>ข้อที่</th>
+                    <th>คำถาม</th>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>คำตอบ</th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
