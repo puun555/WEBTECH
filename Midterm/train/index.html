@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <form class="m-3">
+        <div class="form-group" id="question_input">
+            <label>คำถาม : </label>
+            <input type="text" id="question" style="width: 70%;">
+        </div>
+        <div class="form-group mt-2" id="question_input">
+            <input type="radio" name="answer" value="a" id="choice_1">
+            <label>A : </label>
+            <input type="text" id="choie_text1" style="width: 60%;">
+        </div>
+        <div class="form-group mt-2" id="question_input">
+            <input type="radio" name="answer" value="b" id="choice_2">
+            <label>B : </label>
+            <input type="text" id="choie_text2" style="width: 60%;">
+        </div>
+        <div class="form-group mt-2" id="question_input">
+            <input type="radio" name="answer" value="c" id="choice_3">
+            <label>C : </label>
+            <input type="text" id="choie_text3" style="width: 60%;">
+        </div>
+        <button type="button" onclick="insert()" class="btn btn-primary mt-3">เพิ่มข้อสอบ</button>
+    </form>
+    <table class="table table-striped" id="tables">
+        <thead>
+            <tr>
+                <th>ข้อที่</th>
+                <th>คำถาม</th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>คำตอบ</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
