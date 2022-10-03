@@ -44,7 +44,7 @@
 <body>
     <div>
         <div class="head">
-            <h1>JUNE 2022</h1>
+            <h1>APRIL 2022</h1>
         </div>
         <div>
             <table>
@@ -58,10 +58,10 @@
                     <th>Sa</th>
                 </tr>
                 <?php
-                $k = -2;
+                $k = 0;
                 for ($i = 0; $i < 5; $i++) {
                     for ($j = 0; $j < 7; $j++) {
-                        if ($k > 0 && $k <= 30) {
+                        if ($k > 0 && $k <= 31) {
                             echo "<td>$k</td>";
                         } else {
                             echo "<td></td>";
